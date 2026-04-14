@@ -1,0 +1,63 @@
+.navbarBackground{
+    background: #0c0f14 !important;
+
+}
+
+.navbarBackground .nav-link:hover {
+    color: #007bff !important;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+/* //hero section */
+.leftBox{
+    margin-top: 200px;
+}
+.font-size{
+    font-size: 50px;
+}
+.padding{
+    padding-left: 100px;
+}
+/* image k liye */
+/* .hero-image-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-image-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #1d3b53;
+  border-radius: 50% 65% 40% 35%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 20px;
+} */
+
+.picBackground{
+   
+    background: #1b1e6f;
+    width: 550px;
+  height: 600px;
+ 
+    border-radius: 50% 65% 40% 35%;
+}
+
+.picImage{
+    position: relative;
+    bottom: 30px;
+}
+
+/* login form  */
+input::placeholder {
+  color: #dbd5d5;  
+  opacity: 1;   
+}

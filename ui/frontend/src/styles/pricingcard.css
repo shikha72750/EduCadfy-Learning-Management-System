@@ -1,0 +1,160 @@
+/* Uses global CSS variables from style.css */
+
+/* ===== Pricing Section ===== */
+.pricing-section {
+  background: var(--bg-main);
+  padding: 48px 0;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.pricing-header h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1.2;
+  margin: 0 0 8px 0;
+  max-width: 500px;
+}
+.pricing-header p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding-top: 8px;
+  margin: 0;
+}
+
+/* ===== Card ===== */
+.pricing-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 55px 32px 55px 32px;
+  width: 100%;
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: var(--transition);
+}
+.pricing-card:hover {
+  transform: translateY(-6px) scale(1.02); /* ⬅️ premium hover */
+  box-shadow: var(--shadow-md);
+}
+
+/* ===== Badge ===== */
+.featured-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  z-index: 1;
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+/* ===== Corner pattern ===== */
+.card-pattern {
+  position: absolute;
+  top: 0; right: 0;
+  width: 90px; height: 90px;
+  border-radius: 0 var(--radius-lg) 0 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* ===== Card Top ===== */
+.card-top { margin-bottom: 12px; }
+
+.card-plan-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  color: var(--text-heading);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.card-price-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+}
+.card-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  line-height: 1;
+}
+.card-description {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+  min-height: 34px;
+}
+
+/* ===== Total Row ===== */
+.card-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-sm);
+  padding: 9px 13px;
+  margin: 10px 0px 10px 0px ;
+}
+.card-total-label { font-size: 0.75rem; color: var(--text-secondary); }
+.card-total-price  { font-size: 1.05rem; font-weight: 700; color: var(--accent); }
+
+/* ===== CTA Button ===== */
+.card-cta-btn {
+  padding: 12px 0;
+  border-radius: var(--btn-radius);
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: var(--transition);
+}
+.card-cta-btn.filled {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: #fff;
+  box-shadow: var(--btn-primary-shadow);
+}
+.card-cta-btn.filled:hover {
+  background: linear-gradient(135deg, var(--accent-hover) 0%, var(--accent) 100%);
+  box-shadow: 0 6px 20px rgba(104,117,226,0.4);
+  transform: translateY(-1px);
+}
+
+/* ===== Features ===== */
+.card-features-list {
+  list-style: none;
+  padding: 0; margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+}
+.feature-check { width: 15px; height: 15px; flex-shrink: 0; color: var(--accent); }
